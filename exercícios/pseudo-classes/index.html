@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes</title>
+    <style>
+        .div1 {
+            display: inline-block;
+            background-color: lightgray;
+            border: 1px solid black;
+            height: 200px;
+            width: 200px;
+        }
+
+         .div1:hover {
+            /*Na pseudo classe é usado  o ":" */
+            background-color: chartreuse;
+        }
+
+        button {
+            background-color: black;
+            color: white;
+            height: 50px;
+            width: 250px;
+        }
+
+        button:hover {
+            background-color: gold;
+        }
+
+        /*-----------------------EXEMPLO 2--------------------------------------*/
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        div>p {
+            display: none;
+
+        }
+
+        div:hover>p {
+            display: block;
+            color: white;
+            background-color: rgb(29, 9, 77);
+        }
+
+        div:hover {
+            color: red;
+            background-color: blue;
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--EXEMPLO 1-->
+    <h1>Exemplos em Hover Simples</h1>
+    <p>Passe o mouse por cima dos elementos e veja o efeito hover</p>
+    <div id="d1" class="div1">Caixa 01</div>
+    <div id="d2" class="div1">Caixa 02</div>
+    <div id="d3" class="div1">Caixa 03</div>
+    <button>Botão</button>
+
+    <!--EXEMPLO 2-->
+    <h1>Exemplo em Hover Mais Avançado</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>
+        Passe o mouse aqui
+        <p>TEXTO ESCONDIDO</p>
+    </div>
+    <p>Fim do exemplo</p>
+</body>
+
+</html>

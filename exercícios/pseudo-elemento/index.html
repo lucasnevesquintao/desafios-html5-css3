@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elemento</title>
+    <!--NO PESUDO ELEMENTO É USADO O SINAL "::"-->
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: brown;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited { /*Quando o link for visitado, a cor ira mudar diferente*/
+            color: blue;
+        }
+
+        a#dc {
+            color: brown;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        a:active { /*quando o link for clicado a cor dele ira mudar*/
+            color: black;
+        }
+
+        a::before {
+            content: '⇒';
+            /*O (content:'') possibilita colocar um texto dentro das aspas para ser exibido na tela*/
+        }
+
+        a::after {
+            content: '⇐';
+            /*before: antes, after: depois*/
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a href="https://github.com/LucasNQ?tab=repositories" target="_blank">Repositório do GitHub</a></li>
+        <li><a href="https://www.youtube.com/@NoskGames" target="_blank">Canal do Youtube</a></li>
+        <li><a href="https://discord.gg/edjWdwavHk" target="_blank" id="dc">Comunidade Discord</a></li>
+    </ul>
+</body>
+
+</html>

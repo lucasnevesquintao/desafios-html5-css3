@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!-- A ORDEM DE TODOS IMPORTAM!, SE O PRIMEIRO NÃO CARREGAR O NAVEGADOR VAI TENTAR  CARREGAR O SEGUNDO, E ASSIM POR DIANTE -->
+
+<!-- OBSERVAÇÕES IMAGENS
+- type vai indicar o media type da imagem que usamos.
+- srcset vai configurar o nome da imagem que será carregada quando o tamanho indicado for atingido
+- media indica o tamanho máximo a ser considerado para carregar a imagem indicada no atributo srcset.-->
+
+<!-- OBSERVAÇÕES IMAGENS AUDIO
+‣ O atributo preload indica se o áudio será pré-carregado ou não e aceita três valores:
+      - ๏ metadata vai carregar apenas as informações sobre o arquivo (tamanho,tempo, informações de direitos, etc)
+     - ๏ none não vai carregar absolutamente nada até que o usuário clique no botãoplay ou um script inicie a reprodução
+     - ๏ auto (padrão) vai carregar o arquivo de áudio inteiro assim que a página for carregada, mesmo que o usuário nunca aperte o play.
+
+‣ O atributo controls vai apresentar o player na tela. Caso não seja colocado na tag <audio>, o controle será transparente e o usuário não poderá interagir com ele.
+‣ O atributo autoplay, quando inserido, vai iniciar a reprodução do áudio assim que a página for carregada.
+‣ O atributo loop vai fazer com que o áudio seja repetido eternamente assim que
+terminar a sua reprodução. 
+
+‣ Dentro da tag <audio>, adicionamos vários <source> com formatos diferentes do
+mesmo áudio. Coloque na parte de cima o seu formato favorito. Os demais só serão
+carregados caso o de cima falhe. Caso todos falhem, criamos um parágrafo que
+permite o download do arquivo MP3 para ouvir no player padrão do dispositivo.-->
+
+<!-- OBSERVAÇÕES VÍDEOS 
+ ‣ width vai indicar a largura que o vídeo vai ter na tela. Nesse exemplo, 600px.
+‣ poster configura uma imagem que vai aparecer como uma capa, enquanto o visitante não aperta o play para reproduzir o vídeo
+‣ controls vai configurar se os controles do vídeo vão aparecer na parte inferior da mídia. Por padrão, os controles não aparecerão, mas basta colocar a palavra controls na tag <video>.
+‣ autoplay diz para o navegador se o vídeo vai começar a tocar automaticamente,
+assim que a página for carregada. -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem Flexível e Aúdio</title>
+</head>
+
+<body>
+    <h1>Deixando uma imagem flexível para diferentes tamanhos de tela</h1>
+    <picture>
+        <source media="(max-width: 705px)" srcset="imgs/lamborghiniP.jpg" type="image/jpeg">
+        <source media="(max-width: 1550px)" srcset="imgs/lamborghiniM.jpg" type="image/jpeg">
+        <img src="imgs/lamborghiniG.jpg" alt="Imagem flexível">
+    </picture>
+
+    <h1>Adicionando Aúdio</h1>
+    <audio preload="metadata" controls autoplay>
+        <source src="dentro-da-mala.mp3" type="audio/mpeg">
+        <source src="dentro-da-mala.ogg" type="audio/ogg">
+        <p>Seu navegador não suporta audio <a href="dentro-da-mala.mp3" download="dentro-da-mala.mp3"
+                type="audio/mpeg">Faça o Download</a></p>
+    </audio>
+
+    <h1>Adicionando Video pelo servidor</h1>
+    <h2>(Consumo de Dados, consequentemente tera um gasto maior para o cliente)</h2>
+    <video controls muted width="1000" poster="midia/capa-video.jpg">
+        <source src="midia/video-lambo.mp4" type="video/mp4">
+        <source src="midia/Video-Lambo.mkv" type="video/x-matroska">
+        <source src="midia/Video-Lambo.webm" type="video/webm">
+        <source src="midia/video-lambo.ogv" type="vido/ogg">
+        <p>Seu navegador não é compativel com reprodução de videos.</p>
+    </video>
+
+    <h1>Adicionando Video pelo Youtube</h1>
+    <h2>(Nenhum consumo de Dados pelo servidor, apenas pelo youtube)</h2>
+    <iframe width="1000" height="600" src="https://www.youtube.com/embed/_GkJSEKvc_k?si=LgsxkQAzD3E-8k7G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+
+</html>

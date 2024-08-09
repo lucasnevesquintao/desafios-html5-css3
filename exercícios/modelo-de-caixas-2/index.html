@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+
+        header {
+            background-color: white;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 39px 39px 39px 0px;
+            box-shadow: -2px 1px 7px 3px rgba(0, 0, 0, 0.219);
+        }
+
+        header>h1 {
+            background-color: rgb(154, 208, 255);
+        }
+
+        nav {
+            background-color: coral;
+            box-shadow: 2px 3px 8px 0px rgba(0, 0, 0, 0.283);
+            /*SOMBRAS*/
+        }
+
+        main {
+            background-color: white;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 59px 59px 0px 59px;
+            box-shadow: 1px 3px 8px 1px rgba(0, 0, 0, 0.338);
+        }
+
+        section>h1 {
+            background-color: rgb(243, 128, 128);
+        }
+
+        nav>a {
+            text-decoration: none;
+        }
+
+        .noticia {
+            background-color: rgb(189, 189, 189);
+        }
+
+        p#Artigo {
+            background-color: rgb(146, 178, 144);
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: beige;
+            margin: 0px;
+            padding: 4px;
+            text-align: center;
+            border-radius: 40px;
+        }
+
+        footer>p {
+            margin: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Paige Heyn</h1> <!--CABEÇALHO-->
+        <nav>
+            <a href="https://www.instagram.com/paigeheyn/" target="_blank">Instagram</a><!--LINKS-->
+        </nav>
+    </header>
+
+    <main> <!--CONTEUDO PRINCIPAL-->
+        <section id="Seção de Notícias">
+            <h1>Olimpíadas De Paris 2024</h1>
+            <article class="noticia"> <!--ARTIGO-->
+                <h2>Desempenho da Paige Heyn</h2>
+                <p>
+                    Heyn acabou de competir nas Olimpíadas de Paris de 2024 na final do skate feminino de rua, ficando
+                    em sexto lugar com 163,23 pontos. Ela era um dos membros mais jovens da equipe dos EUA e uma das
+                    três únicas jovens de 16 anos da equipe.</p>
+                <aside>
+                    <p id="Artigo">Artigo retirado do Google</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+
+    <footer> <!--RODAPÉ-->
+        <p>Desenvolvido por Lucas Neves</p>
+    </footer>
+</body>
+
+</html>
