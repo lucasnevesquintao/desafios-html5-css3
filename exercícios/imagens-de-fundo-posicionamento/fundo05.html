@@ -7,26 +7,41 @@
     <style>
         body {
             height: 98vh;
-            background-image: url("imagens/wallpaper002.jpg");
-            background-repeat: no-repeat;
-            background-position: center top;
-            background-color: black;
-            background-size: cover; /*Ajusta o tamanho da imagem na tela*/
+            /*background-position: center top;
+            /*background-color: black; /*Mesmo que tenha uma imagem de fundo é necessário colocar uma cor de fundo,  pois se a imagem não carregar haverá uma cor de fundo*/
+            /*background-image: url("imagens/wallpaper002.jpg");
+            /*background-repeat: no-repeat; /*não fica repetindo a imagem*/
+            /*background-size: cover; /*Ajusta o tamanho da imagem na tela, fazendo com que a imagem fique prporcional*/
+            /*background-attachment: fixed; /*Fixa a imagem no fundo, fazendo com que ela não se mva ao usar o scroll*/
+            
+        
+            /*Shorthand Background
+            color > image > position > repeat > attachment*/
+            background: black url("imagens/wallpaper002.jpg") no-repeat fixed;
+            background-size: cover; /*Tem que ser separado pois os navegadores não suportam*/
+            
         }
         main {
-            
+            max-width: 400px;
             background-color: white;
-            width: 500px;
             padding: 20px;
             margin: auto;
             border-radius: 20px;
-            border: 1px solid black;  
+            border: 1px solid black;
         }
     </style>
 </head>
 <body>
     <main>
         <h1>Teste de imagem de fundo</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, quidem. Fugit, asperiores. Est, adipisci eligendi numquam et provident assumenda corporis voluptatum, neque doloribus veniam sunt dolore nam voluptas aperiam facere.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, quidem. Fugit, asperiores. Est, adipisci eligendi numquam et provident assumenda corporis voluptatum, neque doloribus veniam sunt dolore nam voluptas aperiam facere.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, quidem. Fugit, asperiores. Est, adipisci eligendi numquam et provident assumenda corporis voluptatum, neque doloribus veniam sunt dolore nam voluptas aperiam facere.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, quidem. Fugit, asperiores. Est, adipisci eligendi numquam et provident assumenda corporis voluptatum, neque doloribus veniam sunt dolore nam voluptas aperiam facere.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, quidem. Fugit, asperiores. Est, adipisci eligendi numquam et provident assumenda corporis voluptatum, neque doloribus veniam sunt dolore nam voluptas aperiam facere.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, quidem. Fugit, asperiores. Est, adipisci eligendi numquam et provident assumenda corporis voluptatum, neque doloribus veniam sunt dolore nam voluptas aperiam facere.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, quidem. Fugit, asperiores. Est, adipisci eligendi numquam et provident assumenda corporis voluptatum, neque doloribus veniam sunt dolore nam voluptas aperiam facere.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, quidem. Fugit, asperiores. Est, adipisci eligendi numquam et provident assumenda corporis voluptatum, neque doloribus veniam sunt dolore nam voluptas aperiam facere.</p>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, quidem. Fugit, asperiores. Est, adipisci eligendi numquam et provident assumenda corporis voluptatum, neque doloribus veniam sunt dolore nam voluptas aperiam facere.</p>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, quidem. Fugit, asperiores. Est, adipisci eligendi numquam et provident assumenda corporis voluptatum, neque doloribus veniam sunt dolore nam voluptas aperiam facere.</p>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, quidem. Fugit, asperiores. Est, adipisci eligendi numquam et provident assumenda corporis voluptatum, neque doloribus veniam sunt dolore nam voluptas aperiam facere.</p>
