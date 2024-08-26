@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio Astronauta</title>
     <style>
-        body {
-            background-image: url(imagens/espaco.jpg);
-            width: 1000px;
-        }
     </style>
 </head>
 <body>
-    
+    <picture>
+        <source media="(max-width: 1920px)" srcset="imagens/espacoM.jpg">
+        <img src="imagens/espacoM.jpg" alt="Espaço">
+    </picture>
+    <picture>
+        <source media="(max-width: 840px)" srcset="imagens/espacoP.jpg">
+        <img src="imagens/espacoP.jpg" alt="Espaço p">
+    </picture>
 </body>
 </html>
