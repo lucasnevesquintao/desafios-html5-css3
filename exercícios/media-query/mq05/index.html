@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
     <title>Menu Responsivo</title>
 </head>
 <body>
     <header>
         <h1>Menu Responsivo</h1>
-        <menu>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu id="itens">
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
@@ -28,5 +30,15 @@
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos ut voluptatibus suscipit aut veniam molestias quod sunt sapiente assumenda voluptatem. Officiis doloremque sunt exercitationem cum quaerat illum beatae delectus eligendi.</p>
         </article>
     </main>
+
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
