@@ -7,33 +7,24 @@
     display: grid;
     gap: 30px;
     grid-template-areas: 
-    'header header header'
-    'aside article section'
-    'footer footer footer';
-    grid-auto-rows: 200px 100px;
+    'header header'
+    'aside section'
+    'footer footer'
+    ;
 }
 
 header {
-    grid-area: header;
     background-color: rgb(20, 238, 20);
 }
 
 aside {
-    grid-area: aside;
     background-color: yellow;
 }
 
-article {
-    grid-area: article;
-    background-color: orange;
-}
-
 section {
-    grid-area: section;
     background-color: rgb(0, 140, 255);
 }
 
 footer {
-    grid-area: footer;
     background-color: pink;
 }
